@@ -1,0 +1,38 @@
+.key
+{
+    overflow: hidden;
+    padding: 0 2rem;
+    position: relative;
+    width: 105%;
+    right: 5%;
+    animation: key 3s forwards;
+}
+@keyframes key 
+{
+   from
+   {
+     right: -100%;
+     opacity: (0.5);
+   } 
+   to
+   {
+     right: 3%;
+     opacity: 1;
+   }
+}
+.C{
+    position: relative;
+    text-align: center;
+    color: rgb(233, 241, 232);
+    font-size: 50PX;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+p a
+{
+    text-decoration: none;
+}

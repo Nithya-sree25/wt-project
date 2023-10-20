@@ -1,0 +1,133 @@
+.E{
+    position: relative;
+    z-index: -1;
+}
+img
+{
+    background-color: rgb(16, 16, 16);
+    width: 100%;
+    height: 690px;
+}
+.C{
+    position: relative;
+    text-align: center;
+    color: rgb(233, 241, 232);
+    font-size: 50PX;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.city {
+    background-color: rgb(241, 236, 235);
+    border: 2px solid rgb(229, 216, 216);
+    margin: 20px;
+    padding: 20px;
+  }
+  .search-bar {
+    position: relative;
+   
+  }
+  
+  .search-bar .icon {
+    position: absolute;
+    top: 47%;
+    left: 10px;
+    height: 20px;
+    width: 30px;
+    transform: translateY(-50%);
+  }
+  
+  .search-bar .input-text {
+    width: 0px;
+    border: 0px;
+    background-color: #fff;
+    height: 20px;
+    padding: 8px 8px 8px 35px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    
+  }
+  .search-bar .input-text:focus {
+    width: 80%;
+    background-color: #ccc;
+  }
+  .nav-item >li a::before
+  {
+    content: " ";
+    position: absolute;
+    width:100%;
+    height: 2px;
+    bottom: -6px;
+    left:0;
+    background-color: rgb(6, 6, 7);
+    visibility: hidden;
+    width:0px;
+    transition: all 0.35 ease-in-out;
+  }
+  .nav-item a:hover::before,
+  .nav-item li:hover > a::before,
+  .nav-item .active > a::before
+  {
+    visibility: visible;
+    width: 100%;
+  }
+  .nav-item a:hover,
+  .nav-item li:hover> a,
+  .nav-item .active> a
+  {
+    color: rgb(27, 27, 198);
+  }
+  .centered
+  {
+    margin-top: -30;
+    margin-right: 70px;
+    height: 450px;
+    animation: move 1.5s infinite;
+  }
+  @keyframes move {
+    0%
+    {
+        transform: translateX(0px) translateY(3px,5px);
+    }
+  }
+  .centered strong
+  {
+    content: " ";
+    transition: 0.3s ease-in-out;
+  }
+  
+.footer{
+    background: #152F4F;
+    color:white;
+    
+    .links{
+      ul {list-style-type: none;}
+      li a{
+        color: white;
+        transition: color .2s;
+        &:hover{
+          text-decoration:none;
+          color:#4180CB;
+          }
+      }
+    }  
+    .about-company{
+      i{font-size: 25px;}
+      a{
+        color:white;
+        transition: color .2s;
+        &:hover{color:#4180CB}
+      }
+    } 
+    .location{
+      i{font-size: 18px;}
+    }
+    .copyright p{border-top:1px solid rgba(255,255,255,.1);} 
+  }
+h6 a
+{
+  text-decoration: none;
+}
